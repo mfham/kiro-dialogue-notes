@@ -1,0 +1,70 @@
+{
+  "name": "developer",
+  "description": "developer",
+  "prompt": "You are a developer assistant focused on software development tasks. Help with coding, debugging, testing, and development workflows. Provide practical solutions and follow best practices for software engineering.",
+  "mcpServers": {
+    "awslabs.aws-pricing-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-pricing-mcp-server@latest"
+      ],
+      "env": {
+        "AWS_REGION": "us-east-1",
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "default"
+      }
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
+    }
+  },
+  "tools": [
+    "read",
+    "glob",
+    "grep",
+    "shell",
+    "subagent",
+    "use_subagent"
+  ],
+  "toolAliases": {},
+  "allowedTools": [
+    "read",
+    "glob",
+    "grep",
+    "subagent",
+    "use_subagent"
+  ],
+  "resources": [],
+  "hooks": {},
+  "toolsSettings": {
+    "read": {
+      "autoApprove": true
+    },
+    "glob": {
+      "autoApprove": true
+    },
+    "grep": {
+      "autoApprove": true
+    },
+    "shell": {
+      "deniedCommands": [
+        "git push .*",
+        "rm -rf .*"
+      ],
+      "autoApprove": true
+    },
+    "subagent": {
+      "availableAgents": [
+        "privacy-guard"
+      ],
+      "trustedAgents": [
+        "privacy-guard"
+      ]
+    }
+  },
+  "useLegacyMcpJson": false,
+  "model": null
+}
