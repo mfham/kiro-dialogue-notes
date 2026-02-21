@@ -58,10 +58,12 @@
     },
     "subagent": {
       "availableAgents": [
-        "privacy-guard"
+        "privacy-guard",
+        "learning-tracker"
       ],
       "trustedAgents": [
-        "privacy-guard"
+        "privacy-guard",
+        "learning-tracker"
       ]
     }
   },
