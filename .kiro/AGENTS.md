@@ -28,3 +28,27 @@
 - 「学びの統計を見せて」
 
 **ステアリングファイル:** `.kiro/agents/learning-tracker/steering/guide.md`
+
+## rails-code-reviewer
+
+Ruby/Rails専門コードレビューエージェント
+
+**役割:** Ruby言語とRails規約、パフォーマンス、セキュリティ、フロントエンド（Tailwind/Stimulus）、テスト品質（RSpec）を自動レビュー
+
+**使用例:**
+- 「このファイルをレビューして」
+- 「app/controllers を全体的にレビューして」
+- 「セキュリティ観点でチェックして」
+- 「パフォーマンス問題を見つけて」
+- 「テストの品質をチェックして」
+
+**レビュー観点:**
+- Ruby言語のベストプラクティス
+- Rails規約（Fat Controller/Thin Model等）
+- N+1クエリ、パフォーマンス最適化
+- セキュリティ（Strong Parameters、XSS、SQLインジェクション）
+- Tailwind/Stimulusのベストプラクティス
+- RSpecテスト品質
+- Rubocop準拠
+
+**ステアリングファイル:** `.kiro/agents/rails-code-reviewer/steering/review-guide.md`
